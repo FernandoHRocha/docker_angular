@@ -1,7 +1,12 @@
-## Comandos docker
+## Execução do projeto
 
-Para executar os comandos abaixo é necessário que o terminal esteja na página estudo-angular-a
+1 - Abrir o terminal na pasta estudo-angular-a;
 
-sudo docker image build --rm -f Dockerfile -t img-angular-a .
+2 - Executar o compando __docker-compose up -d__;
 
-sudo docker container run --rm -p 80:80 -d --name ctn-angular-a img-angular-a
+O comando irá:
+- criar um container para execução;
+- instalar as dependências;
+- realizar o build da aplicação;
+- criar um projeto nginx com o build do passo anterior;
+- expor a porta 80 para acessar a aplicação via navegador.
