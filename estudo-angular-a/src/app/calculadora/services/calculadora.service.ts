@@ -34,11 +34,11 @@ export class CalculadoraService {
       case CalculadoraService.ADICAO:
         resultado = num1 + num2
         break;
-      case CalculadoraService.SUBTRACAO:
-        resultado = num1 - num2
+        case CalculadoraService.SUBTRACAO:
+          resultado = num1 - num2
         break;
-      case CalculadoraService.DIVISAO:
-        resultado = num1 / num2
+        case CalculadoraService.DIVISAO:
+          resultado = num1 / num2
         break;
       case CalculadoraService.MULTIPLICACAO:
         resultado = num1 * num2

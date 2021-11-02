@@ -65,12 +65,29 @@ O método ngOnInit é chamado assim que a instancia do componente é criada, a u
 
 ### ngDoCheck()
 
-## Comunicação entre componente e módulo
+## Vínculos dentro do componente
 
-### Variaveis
+A comunicação dentro do angular acontece baseada no estado da aplicação, de modo que os vinculos estarão sendo atualizados a cada nova interação realizada.
 
-As variaveis contidas em .module.ts são obtidas dentro do html do próprio componente utilizando o nome da variavel entre chaves duplas {{var}}.
+### One Way Data Binding - Vínculo de uma direção
 
+É possível utilizar uma expressão proveniente do typescript do componente dentro do html. Para tal, utilizamos uma das seguintes sintaxes:
+```
+[valor]="expressão"
+
+{{expressão}}
+
+vinculo-alvo="expressão"
+```
+[Sintaxe de Vinculos](https://angular.io/guide/binding-syntax)
+
+### Event Biding - Vínculo de Evento
+
+Chamadas a eventos podem ser realizadas diretamente dentro do html do componente.
+```
+(click)="event"
+```
+[Vínculo de Evento](https://angular.io/guide/event-binding)
 
 ## Testes
 
